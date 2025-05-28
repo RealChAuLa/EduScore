@@ -1,0 +1,22 @@
+
+
+.default-button {
+
+    -fx-background-radius: 10px; /* Rounded corners */
+
+    -fx-cursor: hand; /* Cursor style */
+}
+
+.default-green:hover {
+    -fx-background-color: #66ff66; /* Lighter gray on hover */
+    -fx-text-fill: black;
+}
+.default-blue:hover {
+    -fx-background-color: #4d4dff;
+
+    -fx-text-fill: white;
+}
+.default-red:hover {
+    -fx-background-color: #ff3333;
+    -fx-text-fill: white;
+}

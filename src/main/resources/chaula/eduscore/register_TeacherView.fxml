@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="539.0" prefWidth="560.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chaula.eduscore.non_Academic.register_Teacher.register_TeacherController">
+   <children>
+      <AnchorPane layoutX="287.0" layoutY="379.0" />
+      <VBox prefHeight="460.0" prefWidth="560.0" style="-fx-padding: 10;">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="76.0" prefWidth="567.0" style="-fx-background-radius: 20; -fx-background-color: #e6e6e6;">
+               <children>
+                  <Label layoutX="86.0" layoutY="-13.0" prefHeight="89.0" prefWidth="198.0" text="EduScore">
+                     <font>
+                        <Font name="Baloo" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="45.0" prefHeight="31.0" prefWidth="229.0" text="Teacher Registration Panel">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="72.0" fitWidth="74.0" layoutX="14.0" layoutY="4.0" preserveRatio="true">
+                     <image>
+                        <Image url="@teacher-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="432.0" layoutY="19.0" onAction="#gobackBtnClicked" stylesheets="@stylesheet.css" text="Go Back">
+                     <styleClass>
+                        <String fx:value="default-red" />
+                        <String fx:value="default-button" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="20.0" prefHeight="23.0" prefWidth="96.0" text="First Name">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstnameBox" layoutX="30.0" layoutY="40.0" prefHeight="39.0" prefWidth="229.0" />
+                  <Label layoutX="290.0" layoutY="20.0" prefHeight="23.0" prefWidth="96.0" text="Last Name">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lastnameBox" layoutX="290.0" layoutY="40.0" prefHeight="39.0" prefWidth="229.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="96.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="20.0" prefHeight="23.0" prefWidth="96.0" text="Username">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameBox" layoutX="30.0" layoutY="40.0" prefHeight="39.0" prefWidth="229.0" />
+                  <Label layoutX="290.0" layoutY="20.0" prefHeight="23.0" prefWidth="96.0" text="Password">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passwordBox" layoutX="290.0" layoutY="40.0" prefHeight="39.0" prefWidth="229.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="subjectComboBox" layoutX="290.0" layoutY="40.0" prefHeight="39.0" prefWidth="229.0" promptText="Subject" />
+                  <Label layoutX="30.0" layoutY="20.0" prefHeight="23.0" prefWidth="96.0" text="Birthday">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="birthdayBox" layoutX="30.0" layoutY="40.0" prefHeight="39.0" prefWidth="229.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="117.0" prefWidth="427.0">
+               <children>
+                  <Label layoutX="32.0" layoutY="28.0" prefHeight="23.0" prefWidth="96.0" text="Address">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="addressBox" layoutX="32.0" layoutY="51.0" prefHeight="66.0" prefWidth="229.0" />
+                  <ImageView fitHeight="173.0" fitWidth="186.0" layoutX="321.0" layoutY="14.0" preserveRatio="true">
+                     <image>
+                        <Image url="@register_TeacherBackground.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="32.0" layoutY="140.0" onAction="#clearBtnClicked" stylesheets="@stylesheet.css" text="Clear All">
+                     <styleClass>
+                        <String fx:value="default-blue" />
+                        <String fx:value="default-button" />
+                     </styleClass>
+                  </Button>
+                  <Button layoutX="147.0" layoutY="140.0" onAction="#registerBtnClicked" stylesheets="@stylesheet.css" text="Register">
+                     <styleClass>
+                        <String fx:value="default-button" />
+                        <String fx:value="default-green" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

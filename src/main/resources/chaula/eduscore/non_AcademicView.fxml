@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="398.0" prefWidth="449.0" spacing="10" style="-fx-padding: 25px; -fx-background-color: white; -fx-background-radius: 20;" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chaula.eduscore.non_Academic.non_AcademicController">
+   <AnchorPane prefHeight="104.0" prefWidth="505.0">
+      <children>
+         <Label layoutX="87.0" layoutY="-13.0" text="EduScore">
+            <font>
+               <Font name="Baloo" size="46.0" />
+            </font>
+         </Label>
+         <Label layoutX="87.0" layoutY="41.0" prefHeight="23.0" prefWidth="101.0" text="Admin Panel">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="68.0" fitWidth="71.0" layoutX="6.0" preserveRatio="true">
+            <image>
+               <Image url="@logo.gif" />
+            </image>
+         </ImageView>
+         <Button fx:id="logoutBtn" layoutX="315.0" layoutY="22.0" onAction="#logoutBtnClicked" text="Log Out">
+            <styleClass>
+               <String fx:value="default-red" />
+               <String fx:value="default-button" />
+            </styleClass>
+         </Button>
+      </children>
+   </AnchorPane>
+   <HBox alignment="CENTER_LEFT" style="-fx-background-color: #e6e6e6; -fx-padding: 15; -fx-background-radius: 20;">
+      <children>
+         <ImageView fitHeight="67.0" fitWidth="60.0" preserveRatio="true">
+            <image>
+               <Image url="@student-icon.png" />
+            </image>
+         </ImageView>
+      
+               <!-- Students Section -->
+         <VBox prefHeight="87.0" prefWidth="318.0" spacing="5" style="-fx-padding: 10;">
+            <Label prefHeight="27.0" prefWidth="125.0" style="-fx-font-size: 18px;" text="Students" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="10.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+               <Button layoutX="123.0" layoutY="10.0" onAction="#newstudentBtnClicked" text="New">
+                  <styleClass>
+                     <String fx:value="default-button" />
+                     <String fx:value="default-green" />
+                  </styleClass>
+               </Button>
+               <Button onAction="#editstudentBtnClicked" text="Edit/Remove">
+                  <styleClass>
+                     <String fx:value="default-red" />
+                     <String fx:value="default-button" />
+                  </styleClass>
+               </Button>
+               <Button layoutX="221.0" layoutY="10.0" onAction="#reportsstudentBtnClicked" text="Reports">
+                  <styleClass>
+                     <String fx:value="default-blue" />
+                     <String fx:value="default-button" />
+                  </styleClass>
+               </Button>
+            </HBox>
+         </VBox>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="240.0" style="-fx-background-color: #e6e6e6; -fx-padding: 15; -fx-background-radius: 20;">
+      <children>
+         <ImageView fitHeight="67.0" fitWidth="60.0" preserveRatio="true">
+            <image>
+               <Image url="@teacher-icon.png" />
+            </image>
+         </ImageView>
+         <VBox prefHeight="87.0" prefWidth="317.0" spacing="5" style="-fx-padding: 10;">
+            <children>
+               <Label prefHeight="27.0" prefWidth="125.0" style="-fx-font-size: 18px;" text="Teachers" textAlignment="CENTER">
+                  <font>
+                     <Font name="Segoe UI Bold" size="10.0" />
+                  </font>
+               </Label>
+               <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="325.0" spacing="10">
+                  <children>
+                     <Button layoutX="123.0" layoutY="10.0" onAction="#newteacherBtnClicked" text="New">
+                        <styleClass>
+                           <String fx:value="default-button" />
+                           <String fx:value="default-green" />
+                        </styleClass>
+                     </Button>
+                     <Button onAction="#editteacherBtnClicked" text="Edit/Remove">
+                        <styleClass>
+                           <String fx:value="default-red" />
+                           <String fx:value="default-button" />
+                        </styleClass>
+                     </Button>
+                     <Button layoutX="221.0" layoutY="10.0" onAction="#reportsteacherBtnClicked" text="Reports">
+                        <styleClass>
+                           <String fx:value="default-blue" />
+                           <String fx:value="default-button" />
+                        </styleClass>
+                     </Button>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+
+</VBox>
